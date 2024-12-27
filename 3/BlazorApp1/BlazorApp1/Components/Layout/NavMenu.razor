@@ -1,0 +1,42 @@
+﻿<div class="top-row ps-3 navbar navbar-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="">BlazorApp1</a>
+    </div>
+</div>
+
+<input type="checkbox" title="Navigation menu" class="navbar-toggler" />
+
+<div class="nav-scrollable" onclick="document.querySelector('.navbar-toggler').click()">
+    <nav class="flex-column">
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
+                <span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span> Home
+            </NavLink>
+        </div>
+
+          <div class="card" style="width: 15rem;">
+        <div class="card-body">
+            <h5 class="card-title">Таблица Users</h5>
+            <p class="card-text">Здесь вы можете посмотреть пользователя, посмотреть его почту и пароль</p>
+            <a href="users" class="btn btn-primary">Перейти к Users</a>
+        </div>
+            <div class="card-body">
+                <h5 class="card-title">Таблица Movies</h5>
+                <p class="card-text">Здесь вы можете посмотреть название фильма и его описание</p>
+                <a href="Movies" class="btn btn-primary">Перейти к Reviews</a>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Таблица Reviews</h5>
+                <p class="card-text">Здесь вы можете посмотреть рейтинг фильмов и узнать ее описание</p>
+                <a href="Reviews" class="btn btn-primary">Перейти к Reviews</a>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Добавление пользователя</h5>
+                <p class="card-text">Вы можете добавить пользователя в таблице Users</p>
+                <a href="Adduser" class="btn btn-primary">Добавить пользователя</a>
+            </div>
+        </div>
+
+    </nav>
+</div>
+
